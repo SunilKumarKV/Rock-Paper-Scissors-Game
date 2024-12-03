@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+
+html{
+    background-color: #192d57;
+}
+
+.header{
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+body{
+    color: rgb(255, 255, 255);
+}
+
+body, .second, .third, .round-winner, .first{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.first h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+h3,h2{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.score, .selection, .points, .third-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.scissor, .paper, .rock{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selection{
+    height: 50px;
+}
+
+.points{
+    height: 45px;
+}
+
+.second{
+    height: 150px;
+}
+
+.buttons img{
+    height: 120px;
+    width: 120px;
+}
+
+.buttons img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgb(106, 223, 106);
+}
+
+.winner{
+    font-size: 25px;
+}
+
+.compChoice, .yourChoice{
+    height: 70px;
+    width: 70px;
+}
+
+.points{
+    font-size: 18px;
+}

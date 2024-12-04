@@ -70,6 +70,8 @@ h2{
 .buttons img{
     height: 120px;
     width: 120px;
+    cursor: pointer;
+    padding: auto;
 }
 
 .buttons img:hover{
@@ -88,4 +90,125 @@ h2{
 
 .points{
     font-size: 18px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* Media Query for Tablets (Screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 90%; 
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .buttons {
+        gap: 15px; /* Reduce gap between buttons */
+    }
+
+    .buttons img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .selection, .points {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compChoice, .yourChoice {
+        height: 60px;
+        width: 60px;
+    }
+
+    .winner {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* Media Query for Mobile Devices (Screens smaller than 480px) */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 80%; 
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .first h3, h2 {
+        font-size: 22px;
+    }
+
+    .buttons img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .buttons {
+        flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+        gap: 10px;
+    }
+
+    .scissor, .paper, .rock {
+        gap: 5px;
+    }
+
+    .compChoice, .yourChoice {
+        height: 50px;
+        width: 50px;
+    }
+
+    .winner {
+        font-size: 18px;
+    }
+
+    .points {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .selection {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query for Extra Small Devices (Screens smaller than 320px) */
+@media screen and (max-width: 320px) {
+    .header {
+        font-size: 16px;
+    }
+
+    .first h3, h2 {
+        font-size: 18px;
+    }
+
+    .buttons img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .winner {
+        font-size: 16px;
+    }
+
+    .compChoice, .yourChoice {
+        height: 40px;
+        width: 40px;
+    }
+
+    .points {
+        font-size: 14px;
+    }
 }
